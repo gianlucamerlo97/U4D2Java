@@ -8,7 +8,7 @@ public class Es1 {
 
         public boolean StringaPariDispari(String str){
 
-            if(str.length()%==0) {
+            if(str.length() %2 ==0) {
                 System.out.println("La stringa è pari");
                 return true;
             } else {
@@ -18,7 +18,14 @@ public class Es1 {
 
 
 
-        };
+        }
+
+        public boolean annoBisestile(int year){
+        if(year % 4 ==0 ){
+            return year % 400 == 0 && year % 100 == 0;
+
+        }
+            return false;
      }
 
 }
